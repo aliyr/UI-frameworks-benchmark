@@ -7,7 +7,7 @@ import {ViewportRuler, ScrollDispatcher, ScrollDispatchModule} from '@angular/cd
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class VirtualScrollerComponent implements OnInit {
-  fixedSizeData = Array(10000).fill(30);
+  fixedSizeData = Array(1000).fill(30);
   constructor() { }
 
   ngOnInit() {
