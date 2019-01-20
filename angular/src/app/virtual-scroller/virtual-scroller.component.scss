@@ -1,0 +1,21 @@
+.example-viewport {
+  height: 200px;
+  width: 200px;
+}
+
+.example-item {
+  height: 25px;
+}
+
+.virtual-container{
+  margin: 50px;
+}
+
+.main{
+  float: left;
+  border: 1px solid red;
+
+  .title{
+    height: 25px;
+  }
+}

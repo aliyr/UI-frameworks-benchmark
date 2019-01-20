@@ -1,0 +1,14 @@
+<div class="virtual-container">
+  <h3>Virtual Scroller Example</h3>
+  <div class="main">
+    <div class="title">asasasas</div>
+    <cdk-virtual-scroll-viewport class="example-viewport" itemSize="30">
+      <div *cdkVirtualFor="let size of fixedSizeData; let i = index"
+           class="example-item">
+        Item {{i}}
+      </div>
+    </cdk-virtual-scroll-viewport>
+    <div class="title">asasasas</div>
+    <div class="title">asasasas</div>
+  </div>
+</div>
