@@ -22,14 +22,26 @@ data = shuffle(a);
 
 
 export default class VirtualScrollerExample extends Component{
-
-
+    constructor (props) {
+        super(props);
+        this.state = {
+            innerHeight: 500
+        }
+    }
+    updateHeight () {
+        this.setState(() => {
+            return {
+                innerHeight: 900
+            }
+        })
+    }
     render() {
         return (
             <div style={{height: '100%'}}>
+                <button onClick={() => {this.updateHeight()}}>aaaa</button>
                 <VirtualList
                     width='100%'
-                    height={window.innerHeight}
+                    height={this.state.innerHeight}
                     itemCount={data.length}
                     itemSize={data} // Also supports variable heights (array or function getter)
                     renderItem={({index, style}) =>
