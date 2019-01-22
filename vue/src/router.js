@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import VirtualScroller from './views/VirtualScroller.vue'
+import CallApi from './views/CallApi'
 Vue.use(Router)
 
 export default new Router({
@@ -17,6 +18,11 @@ export default new Router({
       path: '/virtual-scroller',
       name: 'VirtualScroller',
       component: VirtualScroller
+    },
+    {
+      path: '/call-api',
+      name: 'CallApi',
+      component: CallApi
     }
     // {
     //   path: '/about',
