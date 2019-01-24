@@ -2,7 +2,7 @@
   <div class="dynamic-scroller-demo">
     <DynamicScroller
       :items="items"
-      :min-item-height="54"
+      :min-item-height="50"
       class="scroller"
     >
       <div slot="before-container" class="notice">
@@ -22,9 +22,6 @@
           class="message"
           @click.native="changeMessage(item)"
         >
-          <div class="avatar">
-            <div>{{item.name}}</div>
-          </div>
           <div class="text">
             {{ index }}
             {{ item.message }}
@@ -36,6 +33,7 @@
 </template>
 
 <script>
+
 const items = []
 for (let i = 0; i < 1000; i++) {
   items.push({
@@ -59,7 +57,7 @@ export default {
 
   .dynamic-scroller-demo,
   .scroller {
-    height: 100%;
+    height: 500px;
   }
   .dynamic-scroller-demo {
     overflow: hidden;

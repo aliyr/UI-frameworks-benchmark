@@ -3,7 +3,7 @@ import 'react-virtualized/styles.css';
 import VirtualList from 'react-tiny-virtual-list';
 let data;
 let a=[],i=0;
-for (a , i;i<100;++i) a[i]=i;
+for (a , i;i<1000;++i) a[i]=i;
 
 // http://stackoverflow.com/questions/962802#962890
 function shuffle(array) {
@@ -12,7 +12,7 @@ function shuffle(array) {
         current = Math.floor(Math.random() * (top + 1));
         tmp = array[current];
         array[current] = array[top];
-        array[top] = tmp * 2;
+        array[top] = tmp /5;
     }
     return array;
 }
@@ -43,7 +43,7 @@ export default class VirtualScrollerExample extends Component{
                     width='100%'
                     height={this.state.innerHeight}
                     itemCount={data.length}
-                    itemSize={data} // Also supports variable heights (array or function getter)
+                    itemSize={50} // Also supports variable heights (array or function getter)
                     renderItem={({index, style}) =>
                         <div  key={index} style={{height: data[index], border: '1px solid red',boxSizing: 'border-box' , ...style}}>
                             Letter: {data[index]}, Row: #{index}
