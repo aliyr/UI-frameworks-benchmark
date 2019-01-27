@@ -5,17 +5,24 @@ class ApiRequest extends Component {
     post: '',
     responseToPost: '',
   };
+
+
   componentDidMount() {
     this.callApi()
       .then(res => this.setState({ response: res.express }))
       .catch(err => console.log(err));
   }
+
+
   callApi = async () => {
-    const response = await fetch('/api/hello');
+    const response = await fetch('/todos/1');
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
-    return body;
+    debugger;
+    this.setState({ response: body.title });
   };
+
+
   handleSubmit = async e => {
     e.preventDefault();
     const response = await fetch('/api/world', {
@@ -28,10 +35,12 @@ class ApiRequest extends Component {
     const body = await response.text();
     this.setState({ responseToPost: body });
   };
-render() {
+
+
+  render() {
     return (
       <div className="App">
-        <p>{this.state.response}</p>
+        <p>title of todo service: {this.state.response}</p>
         <form onSubmit={this.handleSubmit}>
           <p>
             <strong>Post to Server:</strong>
