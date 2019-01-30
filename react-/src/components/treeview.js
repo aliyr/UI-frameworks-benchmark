@@ -3,8 +3,5 @@ import CheckboxTree from 'react-checkbox-tree';
 
 export  class treeView extends Component{
     return(
-     
-
-
     );
 }
