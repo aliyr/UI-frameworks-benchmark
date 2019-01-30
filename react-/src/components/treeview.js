@@ -1,63 +1,64 @@
-import React, {Component} from 'react';
+import React, {
+    Component
+} from 'react';
 import 'react-checkbox-tree/lib/react-checkbox-tree.css';
 import CheckboxTree from 'react-checkbox-tree';
 
-const nodes= []
 
-export  class treeView extends Component{
-    
+
+export class treeView extends Component {
+
     constructor() {
+
         super();
+
         this.state = {
-             nodes : [],
+             nodes : [{ value: 'parent num 1' , label: 'parent num 1' },{ value: 'parent num 2' , label: 'parent num 2'}],
             checked: [],
             expanded: [],
+            arr :  []
         };
-   
+
+
+        this.addMore = this.addMore.bind(this);
     }
-    addMore (){
-        for(let i =0 ; i<=5 ; i++){
-         nodes.push({
-            value: 'parent num' + i ,
-            label: 'parent num' + i ,
-            children : [
-                { value: '1', label: '1' }, 
-                { value: '2', label: '2' },
-            ]
+    addMore() {
+        if(this.state.nodes.length < 500){
 
+     
+             for (let i = 0; i <= 500; i++) {
+                this.setState({
+                   arr  : this.state.arr.push({value: 'parent num ' + i , label: 'parent num ' + i}),
+                   nodes: this.state.nodes.concat(this.state.arr),
+                   arr:[],
+                })
 
-         })
-    }
-    console.log(nodes) 
-}
-
-
-render(){
-    return(
-        
-       <div>
- <div className="customHeight">
-
-<CheckboxTree
- nodes={nodes} 
- checked={this.state.checked}  
- expanded={this.state.expanded}      
- onCheck={checked => this.setState({ checked })} 
- onExpand={expanded => this.setState({ expanded })}
- ></CheckboxTree>
-
+         }
+        }
 
     
+    }
 
+    render() {
+        return (
 
+            <div >
+            <div className = "customHeight" >
 
-</div>
+            <CheckboxTree 
+            nodes = {this.state.nodes}
+            checked = {this.state.checked}
+            expanded = {this.state.expanded}
+            onCheck = {checked => this.setState({checked})}
+            onExpand = { expanded => this.setState({expanded})} >
+            </CheckboxTree>
 
-<button onClick={this.addMore}>add More</button>
+            </div> <button onClick = {
+                this.addMore
+            } > add More </button>
 
-
-       </div>
-    )
+            </div>
+        )
+    }
 }
-}
-export default treeView 
+export default treeView
