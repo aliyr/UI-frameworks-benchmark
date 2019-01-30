@@ -4,6 +4,7 @@ import './App.css';
 import 'react-checkbox-tree/lib/react-checkbox-tree.css';
 import VirtualScrollerExample from "./components/virtualScrollerExample";
 import ApiRequest from './components/apiRequest';
+import treeView from './components/treeview';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const ind = () => <h2><VirtualScrollerExample/></h2>
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
 <Router>
     <div>
       <ul>
-<li>
+            <li>
     
             <Link to="/">home</Link>
             </li>
@@ -23,10 +24,15 @@ class App extends Component {
             <li>
           <Link to="/api">api request</Link>
           </li>
+          <li>
+          <Link to="/treeView">treeView</Link>
+          </li>
           </ul>
             <Route path="/"  />
       <Route path="/virtual" exact component={VirtualScrollerExample} />
-      <Route path="/api/" component={ApiRequest} />
+      <Route path="/api" component={ApiRequest} />
+
+      <Route path="/treeView" component={treeView} />
     </div>
   </Router>
      
