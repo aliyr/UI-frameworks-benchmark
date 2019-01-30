@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import VirtualScroller from './views/VirtualScroller.vue'
 import CallApi from './views/CallApi'
+import treeView from './views/treeView'
 Vue.use(Router)
 
 export default new Router({
@@ -23,6 +24,11 @@ export default new Router({
       path: '/call-api',
       name: 'CallApi',
       component: CallApi
+    },
+    {
+      path: '/tree-View',
+      name: 'treeView',
+      component:treeView  
     }
     // {
     //   path: '/about',

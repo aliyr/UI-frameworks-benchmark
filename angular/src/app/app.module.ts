@@ -7,17 +7,29 @@ import { VirtualScrollerComponent } from './virtual-scroller/virtual-scroller.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
+import { RouterModule, Routes } from '@angular/router';
+import { TreeViewComponent } from './tree-view/tree-view.component';
+
+const appRoutes : Routes = [
+  {path: 'VirtualScrollerComponent' , component : VirtualScrollerComponent},
+{path: 'treeView' , component :TreeViewComponent }
+
+]
 
 @NgModule({
   declarations: [
     AppComponent,
-    VirtualScrollerComponent
+    VirtualScrollerComponent,
+    TreeViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ScrollingModule
+    ScrollingModule,
+    RouterModule.forRoot(
+      appRoutes
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
