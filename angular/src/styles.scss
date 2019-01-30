@@ -87,5 +87,11 @@ tree-root .angular-tree-component-rtl .tree-children {
 tree-node-checkbox {
   padding: 1px;
 }
+.customHeight{
+    background-color: #f9f9f9;
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+}
 
 @import '~angular-tree-component/dist/angular-tree-component.css'; 
