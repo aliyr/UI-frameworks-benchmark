@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Hme from './views/Home.vue'
 import VirtualScroller from './views/VirtualScroller.vue'
 import CallApi from './views/CallApi'
 import treeView from './views/treeView'
@@ -13,7 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Hme
     },
     {
       path: '/virtual-scroller',

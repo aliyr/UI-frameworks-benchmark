@@ -1,0 +1,29 @@
+.checkbox-container{
+    display: flex;
+    position: relative;
+    height: auto;
+}
+
+.checkbox{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    position: relative;
+
+}
+
+.label{
+    position: relative;
+    height: auto;
+    margin-left: 10px;
+}
+
+.label .label-content{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.active-label .checkbox{
+    background-color: aqua;
+}
