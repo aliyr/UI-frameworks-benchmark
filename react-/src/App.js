@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import VirtualScrollerExample from "./components/virtualScrollerExample";
 import ApiRequest from './components/apiRequest';
 import CheckboxWrapper from "./components/checkboxWrapper/checkboxWrapper";
-
+import treeView from './components/treeview'
 import './App.css';
 import 'react-checkbox-tree/lib/react-checkbox-tree.css';
 
@@ -27,11 +27,14 @@ class App extends Component {
                   </li>
                   <li><Link to="/checkbox">checkbox</Link>
                   </li>
+                  <li><Link to="/treeVIew">treeView</Link>
+                  </li>
               </ul>
               <Route path="/"  />
               <Route path="/virtual" exact component={VirtualScrollerExample} />
               <Route path="/api/" component={ApiRequest} />
               <Route path="/checkbox/" component={CheckboxWrapper} />
+              <Route path="/treeVIew/" component={treeView} />
             </div>
           </Router>
 
