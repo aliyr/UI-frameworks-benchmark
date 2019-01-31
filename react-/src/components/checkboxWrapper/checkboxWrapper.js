@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Checkbox from "./checkbox";
+import logo from '../../logo.svg';
+import Textholder from '../textholder'
 class CheckboxWrapper extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +20,10 @@ class CheckboxWrapper extends Component {
         return (
             <div className="App">
                 <div>{this.state.value.toString()}</div>
-                <Checkbox checkboxValue={this.state.value} valueChanged={this.valueChange}>gholi</Checkbox>
+                <Checkbox checkboxValue={this.state.value} valueChanged={this.valueChange}>
+                    {/*<img style={{width: '100px'}} src={logo} className="App-logo" alt="logo" />*/}
+                    <Textholder fname="gholi"/>
+                </Checkbox>
             </div>
         );
     }

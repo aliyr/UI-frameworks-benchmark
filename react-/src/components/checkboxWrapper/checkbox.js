@@ -19,7 +19,9 @@ class Checkbox extends Component {
                 <input type="checkbox" checked={this.props.checkboxValue} onChange={this.valueChanged} id="checkbox" style={{display: 'none'}}/>
                 <label className={'checkbox-container ' + checkboxStyle} htmlFor="checkbox">
                     <div className='checkbox-tag-container'>
-                        <div className='checkbox'></div>
+                        <div className='checkbox'>
+
+                        </div>
                     </div>
                     <div className='label'>
                         <div className='label-content'>{this.props.children}</div>

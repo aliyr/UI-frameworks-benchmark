@@ -24,6 +24,6 @@
     transform: translateY(-50%);
 }
 
-.active-label {
+.active-label .checkbox{
     background-color: aqua;
 }
