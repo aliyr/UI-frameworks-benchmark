@@ -4,6 +4,7 @@ import Hme from './views/Home.vue'
 import VirtualScroller from './views/VirtualScroller.vue'
 import CallApi from './views/CallApi'
 import treeView from './views/treeView'
+import checkboxWrapper from './views/checkboxWrapper'
 Vue.use(Router)
 
 export default new Router({
@@ -28,7 +29,12 @@ export default new Router({
     {
       path: '/tree-View',
       name: 'treeView',
-      component:treeView  
+      component: treeView
+    },
+    {
+      path: '/checkbox',
+      name: 'checkbox',
+      component: checkboxWrapper
     }
     // {
     //   path: '/about',
