@@ -3,7 +3,6 @@
         <VJstree klass="customHeight"  :data="$store.state.treeViewValues" ></VJstree>
     <button v-on:click="$store.commit('addMore')">add More</button>
     </div>
-
 </template>
 <script>
 import VJstree from 'vue-jstree'
