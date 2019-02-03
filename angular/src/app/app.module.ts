@@ -9,11 +9,16 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { RouterModule, Routes } from '@angular/router';
 import { TreeViewComponent } from './tree-view/tree-view.component';
-import { TreeModule } from 'angular-tree-component'; 
+import { TreeModule } from 'angular-tree-component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
+import { ChechboxmoduleComponent } from './chechboxmodule/chechboxmodule.component';
 
+import { from } from 'rxjs';
 const appRoutes : Routes = [
   {path: 'VirtualScrollerComponent' , component : VirtualScrollerComponent},
-{path: 'treeView' , component :TreeViewComponent }
+{path: 'treeView' , component :TreeViewComponent },
+{path: 'checkbox' , component :CheckboxComponent }
+
 
 ]
 
@@ -21,7 +26,9 @@ const appRoutes : Routes = [
   declarations: [
     AppComponent,
     VirtualScrollerComponent,
-    TreeViewComponent
+    TreeViewComponent,
+    CheckboxComponent,
+    ChechboxmoduleComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,8 @@ const appRoutes : Routes = [
     BrowserAnimationsModule,
     ScrollingModule,
     RouterModule.forRoot(
-      appRoutes
+      appRoutes,
+
     ),
     TreeModule.forRoot(),
     
@@ -38,3 +46,4 @@ const appRoutes : Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
