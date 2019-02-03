@@ -9,6 +9,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { RouterModule, Routes } from '@angular/router';
 import { TreeViewComponent } from './tree-view/tree-view.component';
+import { TreeModule } from 'angular-tree-component'; 
 
 const appRoutes : Routes = [
   {path: 'VirtualScrollerComponent' , component : VirtualScrollerComponent},
@@ -29,7 +30,9 @@ const appRoutes : Routes = [
     ScrollingModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    TreeModule.forRoot(),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

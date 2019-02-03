@@ -35,7 +35,7 @@
 <script>
 
 const items = []
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 500; i++) {
   items.push({
     id: i,
     name: i
