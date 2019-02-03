@@ -1,13 +1,13 @@
 import React , {Component} from "react";
 
-class StateManagement extends Component{
+class Navbar extends Component {
     render() {
         return (
             <div>
-                state management works
+                Navbar Works!
             </div>
         )
     }
 }
 
-export default StateManagement;
+export default Navbar;

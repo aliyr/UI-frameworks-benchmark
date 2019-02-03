@@ -3,7 +3,7 @@ import VirtualScrollerExample from "./components/virtualScrollerExample";
 import ApiRequest from "./components/apiRequest";
 import CheckboxWrapper from "./components/checkboxWrapper/checkboxWrapper";
 import React , {Component} from "react";
-import StateManagement from "./components/stateManagement";
+import StateManagement from "./components/stateManagement/stateManagement";
 
  class RouterLinks extends Component{
     render() {
