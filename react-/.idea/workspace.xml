@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b95ddf4-1c6c-418d-aa96-7a4bfbae23c3" name="Default Changelist" comment="state management with mobx completely implemented">
-      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stateManagement/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stateManagement/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stateManagement/stateManagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stateManagement/stateManagement.js" afterDir="false" />
-    </list>
+    <list default="true" id="3b95ddf4-1c6c-418d-aa96-7a4bfbae23c3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -58,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="504">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -328,7 +320,7 @@
       <workItem from="1548764152060" duration="3388000" />
       <workItem from="1548831997213" duration="17301000" />
       <workItem from="1548921347530" duration="1158000" />
-      <workItem from="1549178643129" duration="19695000" />
+      <workItem from="1549178643129" duration="19936000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;breaking changes on 3 frameworks">
       <created>1548314167954</created>
@@ -386,11 +378,18 @@
       <option name="project" value="LOCAL" />
       <updated>1549195099964</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="react scripts added">
+      <created>1549206466811</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1549206466811</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62999000" />
+    <option name="totallyTimeSpent" value="63240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -429,7 +428,8 @@
     <MESSAGE value="mobx added + state management platform enhanced" />
     <MESSAGE value="state management platform enhanced" />
     <MESSAGE value="state management with mobx completely implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="state management with mobx completely implemented" />
+    <MESSAGE value="react scripts added" />
+    <option name="LAST_COMMIT_MESSAGE" value="react scripts added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/.editorconfig" />
@@ -620,8 +620,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="504">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
