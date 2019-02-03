@@ -3,23 +3,18 @@
 <input id="testCheck" 
 type="checkbox"
  (change)="setValue()"
- [checked]=checked
- 
- >
+
+[checked]='checked'
+   >
+    
 <label for="testCheck">
 
-<div class="checkbox" [ngStyle]=customStyle  [ngClass]="{checkedColor : checked == true}">
+<div class="checkbox" [ngStyle]=customStyle  [ngClass]="{checkedColor : checked }" [ngStyle]='customStyle'>
 <div>     {{checked}}</div>
     
 </div>
-
-
-
         {{name}}
-   
         {{styles}}
-
-
 
 </label>
 
@@ -28,8 +23,7 @@ type="checkbox"
 
 
 <style>
-#testCheck{
-}
+
 .checkbox{
 text-align: center;
 padding: 10px;
