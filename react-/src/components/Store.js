@@ -1,29 +1,38 @@
-import {computed , observable } from 'mobx';
+import { computed, observable } from 'mobx';
 
-class Todo {
-    @observable todos = [];
-    @observable pendingRequests = 0;
+class UsersStore {
+    @observable users = [];
+    @observable company = "";
 
-    @computed get completedTodosCount() {
-        return this.todos.filter(
-            todo => todo.completed === true
-        ).length;
+    getUsers() {
+        this.users = [
+            { id: 1, name: 'aaa' },
+            { id: 2, name: 'bbb' }
+        ];
+
+        return this.users;
     }
 
-    @computed get report() {
-        if (this.todos.length === 0)
-            return "<none>";
-        return `Next todo: "${this.todos[0].task}". ` +
-            `Progress: ${this.completedTodosCount}/${this.todos.length}`;
+    updateUser(i) {
+        this.users[i].name = 'ccc';
+
     }
 
-    addTodo(task) {
-        this.todos.push({
-            task: task,
-            completed: false,
-            assignee: null
-        });
+    getCompany() {
+        this.company = "company";
+        return this.company;
+    }
+
+    addUser(name) {
+        let rnd = Math.random(100);
+        this.users.push({ id: rnd, name: name })
+    }
+
+    updateCompany(name) {
+        this.company = name;
     }
 }
 
-export default Todo;
+const usersStore = new UsersStore();
+
+export default usersStore;

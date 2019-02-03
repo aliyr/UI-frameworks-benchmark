@@ -1,16 +1,26 @@
 import React , {Component} from "react";
 import Main from "./Main";
 import Navbar from "./Navbar";
-import {observer} from 'mobx-react';
-import TodoStore from '../../store/UsersStore';
+import UsersStore from '../Store';
 
-@observer class StateManagement extends Component{
+class StateManagement extends Component{
+
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+        UsersStore.getUsers();
+        UsersStore.getCompany();
+        // this.forceUpdate();
+    }
 
     render() {
         return (
             <div>
-                <Main items={TodoStore}/>
-                <Navbar />
+                <Main store={UsersStore}/>
+                <hr/>
+                <Navbar store={UsersStore}/>
             </div>
         )
     }
