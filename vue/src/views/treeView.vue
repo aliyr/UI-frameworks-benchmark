@@ -7,14 +7,14 @@
 <script>
 import VJstree from 'vue-jstree'
 export default {
-    data(){
-         return {
-        someText : "hello",
-        }
-    },
-    components:{
-          VJstree
+  data () {
+    return {
+      someText: 'hello'
     }
+  },
+  components: {
+    VJstree
+  }
 }
 </script>
 <style>
