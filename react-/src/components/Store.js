@@ -3,7 +3,7 @@ import { computed, observable } from 'mobx';
 class UsersStore {
     @observable users = [];
     @observable company = "";
-
+    @observable draftedItem = "gholi";
     getUsers() {
         this.users = [
             { id: 1, name: 'aaa' },

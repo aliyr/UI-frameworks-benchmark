@@ -16,13 +16,13 @@ import {observer} from "mobx-react";
 
     addUser (e) {
         if(e.key === 'Enter'){
-            this.props.store.addUser(this.state.valueInput);
+            this.props.store.addUser(this.props.store.draftedItem);
             // this.forceUpdate();
         }
     }
 
     inputChange(e) {
-        this.setState({valueInput: e.target.value})
+        this.props.store.draftedItem = e.target.value;
     }
 
     render() {
@@ -31,7 +31,7 @@ import {observer} from "mobx-react";
                 <h3>Company: {this.props.store.company}</h3>
                 <label htmlFor="input">
                     add item :
-                    <input type="text" id="input" value={this.state.valueInput} onChange={(e) => this.inputChange(e)} onKeyPress={this.addUser}/>
+                    <input type="text" id="input" value={this.props.store.draftedItem} onChange={(e) => this.inputChange(e)} onKeyPress={this.addUser}/>
                 </label>
             </div>
         )

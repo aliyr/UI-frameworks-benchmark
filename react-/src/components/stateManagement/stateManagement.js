@@ -5,14 +5,9 @@ import UsersStore from '../Store';
 
 class StateManagement extends Component{
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         UsersStore.getUsers();
         UsersStore.getCompany();
-        // this.forceUpdate();
     }
 
     render() {
