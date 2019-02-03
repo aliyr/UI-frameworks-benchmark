@@ -1,40 +1,13 @@
-
 <div>
-<input id="testCheck" 
-type="checkbox"
- (change)="setValue()"
+  <input id="testCheck" type="checkbox" (change)="setValue()" [checked]='checked'>
+ 
+  <label for="testCheck">
 
-[checked]='checked'
-   >
+    <div class="checkbox" [ngStyle]=customStyle [ngClass]="{checkedColor : !checked  }" [ngStyle]='customStyle'>
+      <div> {{checked}}</div>
+    </div>
+
+    <ng-content></ng-content>
     
-<label for="testCheck">
-
-<div class="checkbox" [ngStyle]=customStyle  [ngClass]="{checkedColor : checked }" [ngStyle]='customStyle'>
-<div>     {{checked}}</div>
-    
+  </label>
 </div>
-        {{name}}
-        {{styles}}
-
-</label>
-
-</div>
-
-
-
-<style>
-
-.checkbox{
-text-align: center;
-padding: 10px;
-display: inline-block;
-min-height: 40px;
-min-width: 40px;
-line-height: 40px;
-background-color: red;
-border: 1px solid 
-}
-.checkedColor{
-    background-color: green !important;
-}
-</style>

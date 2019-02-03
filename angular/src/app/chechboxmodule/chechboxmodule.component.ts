@@ -1,4 +1,7 @@
-import { Component, OnInit, Input , Output , EventEmitter} from '@angular/core';
+import {
+  Component,
+  Input
+} from '@angular/core';
 
 
 @Component({
@@ -7,31 +10,27 @@ import { Component, OnInit, Input , Output , EventEmitter} from '@angular/core';
   styleUrls: ['./chechboxmodule.component.scss']
 })
 
-export class ChechboxmoduleComponent  {
-  
-
-  @Input() checked: boolean = false 
-  @Input() name = "asdbakdj";
-  @Input() customStyle :object ;
+export class ChechboxmoduleComponent {
 
 
+  @Input() checked: boolean = false
+  @Input() name = "qwerty";
+  @Input() customStyle: object;
 
 
-setValue(){
-  
-  if(this.checked){
-     this.checked = false;
+  setValue() {
 
-    }else{
-    this.checked = true;
+    if (this.checked) {
+      this.checked = false;
+
+    } else {
+      this.checked = true;
+    }
+
   }
-  alert(this.checked)
-  console.log(typeof(this.checked))
-  console.log(this.checked)
-}
   constructor() {
-    
-   }
+
+  }
 
 
 
