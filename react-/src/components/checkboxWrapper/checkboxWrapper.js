@@ -9,11 +9,12 @@ class CheckboxWrapper extends Component {
     }
 
     state = {
-        value: false
+        value: true
     };
 
     valueChange (e) {
         this.setState({value: e});
+        alert(e)
     }
 
     render() {
@@ -22,6 +23,7 @@ class CheckboxWrapper extends Component {
                 <div>{this.state.value.toString()}</div>
                 <Checkbox checkboxValue={this.state.value} valueChanged={this.valueChange}>
                     {/*<img style={{width: '100px'}} src={logo} className="App-logo" alt="logo" />*/}
+                    
                     <Textholder fname="gholi"/>
                 </Checkbox>
             </div>
