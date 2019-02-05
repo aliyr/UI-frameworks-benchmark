@@ -1,6 +1,6 @@
 <template>
   <div>
-    main
+    <div v-for="(user, index) in $store.state.users" @click="$store.commit('updateUser',index,)">{{user.name}}</div>
   </div>
 </template>
 
