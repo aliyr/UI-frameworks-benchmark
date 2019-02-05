@@ -27,7 +27,7 @@ import treeView from "./components/treeview"
                             <Link to="/state-management">state management</Link>
                         </li>
                         <li>
-                            <Link to="/treeview">checkbox</Link>
+                            <Link to="/treeview">treeView</Link>
                         </li>
                     </ul>
                     <Route path="/"  />

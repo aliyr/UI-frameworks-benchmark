@@ -4,7 +4,8 @@
 </div>   
     <Checkbox v-for="(element , index) in elements "  v-bind:id="index">
         
-        <img src="../assets/logo.png" alt="" class="img-logo">
+        <!-- <img src="../assets/logo.png" alt="" class="img-logo"> -->
+        {{index}}
       </Checkbox>
      
   </div>

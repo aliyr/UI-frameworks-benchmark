@@ -40,7 +40,7 @@ this.setState(
       
 
         for (let i = 0; i < this.state.data.length; i++) {
-             this.state.data[i] =   <Checkbox></Checkbox> ;
+             this.state.data[i] =   <Checkbox> {i}</Checkbox> ;
             
         }
 
@@ -53,6 +53,7 @@ this.setState(
              
                     {/* <Textholder fname="gholi"/> */}
                 {/* </Checkbox> */}
+                
                 
                 {this.state.data}
             </div>
