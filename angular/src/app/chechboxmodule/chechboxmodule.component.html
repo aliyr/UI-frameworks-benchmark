@@ -1,9 +1,10 @@
 <div>
-  <input id="testCheck" type="checkbox" (change)="setValue()" [checked]='checked'>
-  <label for="testCheck">
-    <div class="checkbox" [ngStyle]=customStyle [ngClass]="{checkedColor : !checked  }" [ngStyle]='customStyle'>
+  <input [id]="eachID" type="checkbox" (change)="setValue()" [checked]='checked'>
+  <label [for]="eachID">
+    <div class="checkbox" [ngStyle]=customStyle [ngClass]="{checkedColor :  checked  }" [ngStyle]='customStyle'>
       <div> {{checked}}</div>
     </div>
+
     <ng-content></ng-content>
   </label>
 </div>
