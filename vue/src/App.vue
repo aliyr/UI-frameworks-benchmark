@@ -5,7 +5,8 @@
       <router-link to="/virtual-scroller">About |</router-link>
       <router-link to="/call-api"> call api |</router-link>
       <router-link to="/tree-View"> treeView | </router-link>
-      <router-link to="/checkbox"> checkbox </router-link>
+      <router-link to="/checkbox"> checkbox | </router-link>
+      <router-link to="/state-management"> state management </router-link>
     </div>
     <router-view/>
   </div>

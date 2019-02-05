@@ -5,6 +5,7 @@ import VirtualScroller from './views/VirtualScroller.vue'
 import CallApi from './views/CallApi'
 import treeView from './views/treeView'
 import checkboxWrapper from './views/checkboxWrapper'
+import StateManagement from './views/StateManagement'
 Vue.use(Router)
 
 export default new Router({
@@ -35,6 +36,11 @@ export default new Router({
       path: '/checkbox',
       name: 'checkbox',
       component: checkboxWrapper
+    },
+    {
+      path: '/state-management',
+      name: 'statManagement',
+      component: StateManagement
     }
     // {
     //   path: '/about',
