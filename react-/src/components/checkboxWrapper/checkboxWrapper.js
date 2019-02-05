@@ -8,12 +8,14 @@ class CheckboxWrapper extends Component {
         this.valueChangeFirst = this.valueChangeFirst.bind(this);
         this.valueChangeSecond = this.valueChangeSecond.bind(this)
         this.valueChangeThird = this.valueChangeThird.bind(this)
+        this.addMoreCheckbox = this.addMoreCheckbox.bind(this)
     }
 
     state = {
         valueFirst: true,
         valueSecond:false,
-        valueThird:true 
+        valueThird:true ,
+         data : new Array(0)
     };
 
     valueChangeFirst (e) {
@@ -28,35 +30,31 @@ class CheckboxWrapper extends Component {
         this.setState({valueThird: e});
         alert("value")
     }
-
+    addMoreCheckbox(){
+this.setState(
+    this.state.data = new Array(500)
+      
+)
+    }
     render() {
+      
+
+        for (let i = 0; i < this.state.data.length; i++) {
+             this.state.data[i] =   <Checkbox></Checkbox> ;
+            
+        }
+
         return (
             <div className="App">
+           <button onClick={this.addMoreCheckbox}>add 500 checkbox</button>
                 {/* <div>{this.state.value.toString()}</div> */}
-                <Checkbox checkboxValue={this.state.valueFirst} valueChanged={this.valueChangeFirst} id="first">
+                {/* <Checkbox  id="first"> */}
                     {/*<img style={{width: '100px'}} src={logo} className="App-logo" alt="logo" />*/}
-                    
-                    <Textholder fname="gholi"/>
-                </Checkbox>
-
-                <div>
-                <Checkbox checkboxValue={this.state.valueSecond} valueChanged={this.valueChangeSecond} id="second">
-                    {/*<img style={{width: '100px'}} src={logo} className="App-logo" alt="logo" />*/}
-                    
-                    <Textholder fname="gholi"/>
-                </Checkbox>
-
-                </div>
-
+             
+                    {/* <Textholder fname="gholi"/> */}
+                {/* </Checkbox> */}
                 
-                <div>
-                <Checkbox checkboxValue={this.state.valueThird} valueChanged={this.valueChangeThird} id="third">
-                    {/*<img style={{width: '100px'}} src={logo} className="App-logo" alt="logo" />*/}
-                    
-                    <Textholder fname="gholi"/>
-                </Checkbox>
-
-                </div>
+                {this.state.data}
             </div>
         );
     }
