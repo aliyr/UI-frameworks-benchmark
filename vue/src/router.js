@@ -6,6 +6,8 @@ import CallApi from './views/CallApi'
 import treeView from './views/treeView'
 import checkboxWrapper from './views/checkboxWrapper'
 import StateManagement from './views/StateManagement'
+import LoginForm from './views/LoginForm'
+import Profile from './views/Profile'
 Vue.use(Router)
 
 export default new Router({
@@ -41,6 +43,16 @@ export default new Router({
       path: '/state-management',
       name: 'statManagement',
       component: StateManagement
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: LoginForm
+    },
+    {
+      path: '/profile/:id',
+      name: 'profile',
+      component: Profile
     }
     // {
     //   path: '/about',
