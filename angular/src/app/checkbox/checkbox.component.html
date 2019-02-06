@@ -1,3 +1,7 @@
-<checkbox [checked]=true [customStyle]="{'background-color' : 'yellow' , 'color' : 'white'}">
-  checkbox text
+
+<button (click)='addMoreCheckBox()'> add 500 checkboxes</button>
+
+
+<checkbox *ngFor="let number of numbers ; let idx = index " [checked]=true [eachID]='idx' >
+  {{number}}
 </checkbox>

@@ -4,10 +4,10 @@ import './checkbox.css';
 class Checkbox extends Component {
     constructor(props) {
         super(props);
-        this.valueChanged = this.valueChanged.bind(this)
+        this.onInputValueChange = this.onInputValueChange.bind(this)
     }
 
-    valueChanged() {
+    onInputValueChange() {
         this.props.valueChanged(!this.props.checkboxValue)
     }
 
@@ -16,8 +16,8 @@ class Checkbox extends Component {
 
         return (
             <div>
-                <input type="checkbox" checked={this.props.checkboxValue} onChange={this.valueChanged} id="checkbox" style={{display: 'none'}}/>
-                <label className={'checkbox-container ' + checkboxStyle} htmlFor="checkbox">
+                <input type="checkbox" checked={this.props.checkboxValue} onChange={this.onInputValueChange} id={this.props.id} style={{display: 'none'}}/>
+                <label className={'checkbox-container ' + checkboxStyle} htmlFor={this.props.id}>
                     <div className='checkbox-tag-container'>
                         <div className='checkbox'>
 

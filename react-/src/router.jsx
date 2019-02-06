@@ -4,7 +4,7 @@ import ApiRequest from "./components/apiRequest";
 import CheckboxWrapper from "./components/checkboxWrapper/checkboxWrapper";
 import React , {Component} from "react";
 import StateManagement from "./components/stateManagement/stateManagement";
-
+import treeView from "./components/treeview"
  class RouterLinks extends Component{
     render() {
         return (
@@ -26,12 +26,17 @@ import StateManagement from "./components/stateManagement/stateManagement";
                         <li>
                             <Link to="/state-management">state management</Link>
                         </li>
+                        <li>
+                            <Link to="/treeview">treeView</Link>
+                        </li>
                     </ul>
                     <Route path="/"  />
                     <Route path="/virtual" exact component={VirtualScrollerExample} />
                     <Route path="/api/" component={ApiRequest} />
                     <Route path="/checkbox/" component={CheckboxWrapper} />
                     <Route path="/state-management" component={StateManagement} />
+                    <Route path="/treeview" component={treeView} />
+
                 </div>
             </Router>
         )

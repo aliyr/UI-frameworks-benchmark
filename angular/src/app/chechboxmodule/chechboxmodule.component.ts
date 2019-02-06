@@ -12,26 +12,13 @@ import {
 
 export class ChechboxmoduleComponent {
 
-
   @Input() checked: boolean = false
-  @Input() name = "qwerty";
   @Input() customStyle: object;
+  @Input() eachID: string;
+
 
 
   setValue() {
-
-    if (this.checked) {
-      this.checked = false;
-
-    } else {
-      this.checked = true;
-    }
-
+this.checked = !this.checked
   }
-  constructor() {
-
-  }
-
-
-
 }
