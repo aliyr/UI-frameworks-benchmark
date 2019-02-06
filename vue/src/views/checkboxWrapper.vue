@@ -1,13 +1,17 @@
 <template>
   <div>
-<div>    <button v-on:click="addMoreCheckBox">add 500 checkbox</button>
-</div>   
-    <Checkbox v-for="(element , index) in elements "  v-bind:id="index">
+<!-- <div>    <button v-on:click="addMoreCheckBox">add 500 checkbox</button> -->
+<!-- </div>    -->
+    <!-- <Checkbox v-for="(element , index) in elements "  v-bind:id="index">
         
-        <!-- <img src="../assets/logo.png" alt="" class="img-logo"> -->
-        {{index}}
+         <img src="../assets/logo.png" alt="" class="img-logo">
+         {{index}} 
+       </Checkbox>  -->
+     <Checkbox v-model="value" id="2">
+        
+       <img src="../assets/logo.png" alt="" class="img-logo"> 
+     aaaa
       </Checkbox>
-     
   </div>
 </template>
 

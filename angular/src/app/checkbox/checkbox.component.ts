@@ -6,8 +6,8 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./checkbox.component.scss']
 })
 export class CheckboxComponent  {
-numbers = new Array
-addMoreCheckBox(){
-  this.numbers = new Array(500)
-}
+// numbers = new Array
+// addMoreCheckBox(){
+//   this.numbers = new Array(500)
+// }
 }
