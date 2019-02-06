@@ -1,4 +1,4 @@
-import { computed, observable } from 'mobx';
+import { observable } from 'mobx';
 
 class UsersStore {
     @observable users = [];
@@ -14,7 +14,7 @@ class UsersStore {
     }
 
     updateUser(i) {
-        this.users[i].name = 'ccc';
+        this.users[i].name = this.draftedItem;
 
     }
 
@@ -26,10 +26,6 @@ class UsersStore {
     addUser(name) {
         let rnd = Math.random(100);
         this.users.push({ id: rnd, name: name })
-    }
-
-    updateCompany(name) {
-        this.company = name;
     }
 }
 

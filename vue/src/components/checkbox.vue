@@ -8,14 +8,14 @@
       style="display: none"
     >
     <label class='checkbox-container' :class="{ 'active-label': checked }" for="checkbox">
-    <div class='checkbox-tag-container'>
-      <div class='checkbox'></div>
-    </div>
-    <div class='label'>
-      <div class='label-content'>
-        <slot></slot>
+      <div class='checkbox-tag-container'>
+        <div class='checkbox'></div>
       </div>
-    </div>
+      <div class='label'>
+        <div class='label-content'>
+          <slot></slot>
+        </div>
+      </div>
     </label>
   </div>
 </template>
