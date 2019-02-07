@@ -33,10 +33,9 @@ this.forceUpdate()
     }
     render(){
         let result
-        let urls = '/profile/' +this.state.loginCHeck.id
         if(this.state.userIsValid){
             this.props.history.push({
-                pathname : urls
+                pathname : `/profile/${this.state.loginCHeck.id}`
             })
 
            result =  <div>    {this.state.loginCHeck.id}</div>
