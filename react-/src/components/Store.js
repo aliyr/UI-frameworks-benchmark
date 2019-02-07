@@ -1,5 +1,11 @@
-import { observable ,action } from 'mobx';
-import { persist ,create} from 'mobx-persist';
+import {
+    observable,
+    action
+} from 'mobx';
+import {
+    persist,
+    create
+} from 'mobx-persist';
 // class UsersStore {
 
 //      @observable users = [];
@@ -44,45 +50,43 @@ import { persist ,create} from 'mobx-persist';
 
 class UsersStore {
 
-    @persist('list')  @observable users = [];
-       @persist  @observable company = "";
-       @persist  @observable draftedItem = "gholi";
-        getUsers() {
-            this.users = [
-                { id: 1, name: 'aaa' },
-                { id: 2, name: 'bbb' }
-            ];
-    
-            return this.users;
-        }
-        updateUser(i) {
-            this.users[i].name = this.draftedItem;
-    
-        }
-        getCompany() {
-            this.company = "company";
-            return this.company;
-        }
+    @persist('list') @observable users = [];
+    @persist @observable company = "";
+    @persist @observable draftedItem = "gholi";
+    getUsers() {
+        this.users = [{
+                id: 1,
+                name: 'aaa'
+            },
+            {
+                id: 2,
+                name: 'bbb'
+            }
+        ];
 
-        addUser(name) {
-            let rnd = Math.random(100);
-            this.users.push({ id: rnd, name: name })
-        }
+        return this.users;
     }
-   
-    const hydrate = create({
-        storage: localStorage,
-    })
+    updateUser(i) {
+        this.users[i].name = this.draftedItem;
 
-    const someStore = new UsersStore()
-    export default someStore;
-    hydrate('some', someStore)
-    .then(() => console.log('some hydrated'))
+    }
+    getCompany() {
+        this.company = "company";
+        return this.company;
+    }
 
- const result = hydrate('some', someStore)
-const rehydrate = result.rehydrate
-result.then(() => console.log('some hydrated'))
+    addUser(name) {
+        let rnd = Math.random(100);
+        this.users.push({
+            id: rnd,
+            name: name
+        })
+    }
+}
 
-setTimeout(() => {
-    rehydrate().then(() => console.log('rehydrated'))
-}, 3000)
+const hydrate = create({
+    storage: localStorage,
+})
+const someStore = new UsersStore()
+ hydrate('some', someStore)
+export default someStore;
