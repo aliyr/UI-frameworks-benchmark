@@ -1,21 +1,19 @@
 import React , {Component} from "react";
 import Main from "./Main";
 import Navbar from "./Navbar";
-import UsersStore from '../Store';
+import someStore from '../Store';
+import { persist ,hydrate} from 'mobx-persist';
 
 class StateManagement extends Component{
 
-    componentDidMount() {
-        UsersStore.getUsers();
-        UsersStore.getCompany();
-    }
+
 
     render() {
         return (
             <div>
-                <Main store={UsersStore}/>
+                <Main store={someStore}/>
                 <hr/>
-                <Navbar store={UsersStore}/>
+                <Navbar store={someStore}/>
             </div>
         )
     }

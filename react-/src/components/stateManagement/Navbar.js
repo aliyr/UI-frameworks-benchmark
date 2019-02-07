@@ -3,6 +3,12 @@ import {observer} from "mobx-react";
 
 @observer class Navbar extends Component {
 
+    constructor(props){
+        debugger;
+
+        super(props);
+    }
+
     dataContentChanged(i) {
         this.props.store.updateUser(i);
     }

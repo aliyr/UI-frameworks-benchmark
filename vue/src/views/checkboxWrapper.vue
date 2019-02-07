@@ -17,7 +17,6 @@
 
 <script>
 import Checkbox from '../components/checkbox'
-
 export default {
   name: 'checkboxWrapper',
   components: { Checkbox },
