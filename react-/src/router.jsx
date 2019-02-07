@@ -5,6 +5,9 @@ import CheckboxWrapper from "./components/checkboxWrapper/checkboxWrapper";
 import React , {Component} from "react";
 import StateManagement from "./components/stateManagement/stateManagement";
 import treeView from "./components/treeview"
+import login from './components/stateManagement/loginPage'
+import profile from './components/stateManagement/profile'
+
  class RouterLinks extends Component{
     render() {
         return (
@@ -27,7 +30,13 @@ import treeView from "./components/treeview"
                             <Link to="/state-management">state management</Link>
                         </li>
                         <li>
+                            <Link to="/loginForm">login form</Link>
+                        </li>
+                        <li>
                             <Link to="/treeview">treeView</Link>
+                        </li>
+                        <li>
+                            <Link to="/profile/">profile</Link>
                         </li>
                     </ul>
                     <Route path="/"  />
@@ -35,7 +44,11 @@ import treeView from "./components/treeview"
                     <Route path="/api/" component={ApiRequest} />
                     <Route path="/checkbox/" component={CheckboxWrapper} />
                     <Route path="/state-management" component={StateManagement} />
+                    <Route path="/loginForm" component={login} />
                     <Route path="/treeview" component={treeView} />
+                    <Route   path="/profile/:id" component={profile}  />
+
+
 
                 </div>
             </Router>
