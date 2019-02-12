@@ -1,6 +1,6 @@
 import { Component, OnInit ,Input} from '@angular/core';
 import { PersistenceService } from 'angular-persistence';
-
+import { AllUSersService } from '../all-users.service';
 const uuidv1 = require('uuid/v1');
 
 @Component({
@@ -9,14 +9,11 @@ const uuidv1 = require('uuid/v1');
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent  {
-  allUsersDB = [
-    {user : "aaa" , id:uuidv1()},
-    {user : "bbb" , id:uuidv1()}
-  ]
-  @Input() someName = 'gholi'
+  allUsersDB = []
+  @Input('someNAme') someName = 'gholi'
 
-  constructor(private persistenceService: PersistenceService) {
-    persistenceService.get('this.allUsersDB');
+  constructor(private userService: AllUSersService) {
+    this.allUsersDB = this.userService.mainUser
   }
 
   
