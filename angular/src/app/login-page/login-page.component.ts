@@ -8,7 +8,6 @@ import {Router} from "@angular/router";
 })
 export class LoginPageComponent implements OnInit {
   constructor(private userService: AllUSersService , private router: Router) { }
-
   ngOnInit() {
   }
   validateUser(loginUser){

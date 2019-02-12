@@ -1,7 +1,6 @@
 
 <textarea name="" id="" cols="30" rows="1" #newUser></textarea>
 <button (click)="addToList(newUser.value)">add to list</button>
-
 <div>
   <ul>
     <li  *ngFor="let user of allUsersDB ; let idx = index " (click)="changeName(user , newUser.value)">{{user.user}}</li>
