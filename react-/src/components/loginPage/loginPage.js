@@ -14,17 +14,17 @@ import someStore from '../Store';
     };
     verifyUser(loginName){
 
-         this.state.loginCHeck = someStore.users.find((username) =>  {
-           if(username.name === loginName){
+         const checkName = someStore.users.find((username) =>  {
+           if (username.name === loginName) {
             this.setState({userIsValid : true});
             return ( username)
-            }else{
-            this.setState({userIsValid : false})
-                  }
+            } else {
+                    this.setState({userIsValid : false})
+            }
             });
-
-this.forceUpdate()
-
+            this.setState({
+                loginCHeck: checkName
+            })
     }
     changeNameValue(e){
         this.setState({ name: e.target.value });

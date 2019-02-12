@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b95ddf4-1c6c-418d-aa96-7a4bfbae23c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/aliyr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/aliyr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stateManagement/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stateManagement/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/stateManagement/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/stateManagement/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,13 +25,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/stateManagement/loginPage.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            <state relative-caret-position="776">
+              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Store.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,6 +76,7 @@
       <find>babel</find>
       <find>babel-prese</find>
       <find>usernullCheck</find>
+      <find>enzy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,6 +106,12 @@
         <option value="$PROJECT_DIR$/src/components/stateManagement/Main.js" />
         <option value="$PROJECT_DIR$/src/components/stateManagement/stateManagement.js" />
         <option value="$PROJECT_DIR$/src/components/stateManagement/loginPage.js" />
+        <option value="$PROJECT_DIR$/src/App.test.js" />
+        <option value="$PROJECT_DIR$/src/setupTests.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/babel.config.js" />
+        <option value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+        <option value="$PROJECT_DIR$/src/components/loginPage/loginPage.js" />
       </list>
     </option>
   </component>
@@ -112,19 +148,6 @@
               <item name="react-" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="react-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="stateManagement" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -132,12 +155,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/App.test.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="D:\works\UI-frameworks-benchmark\react-\node_modules\eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -147,6 +172,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\works\UI-frameworks-benchmark\react-\src\components\loginPage" />
       <recent name="D:\works\UI-frameworks-benchmark\react-\src\components\stateManagement" />
     </key>
   </component>
@@ -239,35 +265,94 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.App.test.js">
-    <configuration name="get-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http">
+  <component name="RunManager" selected="Jest.loginPage.should take user as an item and be equal to component state">
+    <configuration name="loginPage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="get-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" index="2">
+    <configuration name="loginPage.always renders a `ClockDisplay`" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="always renders a `ClockDisplay`" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="post-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http">
+    <configuration name="loginPage.always renders a `button`" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="always renders a `button`" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="post-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" index="2">
+    <configuration name="loginPage.always renders a input type checkbox" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="always renders a input type checkbox" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="loginPage.should take user as an item and be equal to component state" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="should take user as an item and be equal to component state" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="App.test.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/App.test.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.get-requests#1" />
-      <item itemvalue="HTTP Request.get-requests#2" />
-      <item itemvalue="HTTP Request.post-requests#1" />
-      <item itemvalue="HTTP Request.post-requests#2" />
       <item itemvalue="Node.js.App.test.js" />
+      <item itemvalue="Jest.loginPage" />
+      <item itemvalue="Jest.loginPage.always renders a `ClockDisplay`" />
+      <item itemvalue="Jest.loginPage.always renders a `button`" />
+      <item itemvalue="Jest.loginPage.always renders a input type checkbox" />
+      <item itemvalue="Jest.loginPage.should take user as an item and be equal to component state" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.post-requests#1" />
-        <item itemvalue="HTTP Request.get-requests#2" />
-        <item itemvalue="HTTP Request.get-requests#1" />
-        <item itemvalue="HTTP Request.post-requests#2" />
+        <item itemvalue="Jest.loginPage.should take user as an item and be equal to component state" />
+        <item itemvalue="Jest.loginPage.always renders a input type checkbox" />
+        <item itemvalue="Jest.loginPage.always renders a `button`" />
+        <item itemvalue="Jest.loginPage.always renders a `ClockDisplay`" />
+        <item itemvalue="Jest.loginPage" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +377,7 @@
       <workItem from="1549435080798" duration="1025000" />
       <workItem from="1549437898267" duration="1417000" />
       <workItem from="1549530553148" duration="4812000" />
-      <workItem from="1549954975359" duration="785000" />
+      <workItem from="1549954975359" duration="15457000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;breaking changes on 3 frameworks">
       <created>1548314167954</created>
@@ -364,23 +449,62 @@
       <option name="project" value="LOCAL" />
       <updated>1549206731547</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Code modifying in react login page">
+      <created>1549955985805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1549955985805</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="loginPage - 2019.02.12 at 13h 56m 50s.xml">
+      <configuration name="loginPage" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_always_renders_a_`ClockDisplay` - 2019.02.12 at 15h 28m 35s.xml">
+      <configuration name="loginPage.always renders a `ClockDisplay`" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_always_renders_a_`button` - 2019.02.12 at 15h 29m 16s.xml">
+      <configuration name="loginPage.always renders a `button`" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_always_renders_a_input_type_checkbox - 2019.02.12 at 15h 31m 15s.xml">
+      <configuration name="loginPage.always renders a input type checkbox" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_always_renders_a_input_type_checkbox - 2019.02.12 at 15h 31m 47s.xml">
+      <configuration name="loginPage.always renders a input type checkbox" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 03m 45s.xml">
+      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 04m 15s.xml">
+      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 04m 39s.xml">
+      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 07m 00s.xml">
+      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 07m 42s.xml">
+      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79504000" />
+    <option name="totallyTimeSpent" value="94176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7580825" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -388,7 +512,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.19063546" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36789298" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.40245262" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -409,7 +533,8 @@
     <MESSAGE value="state management with mobx completely implemented" />
     <MESSAGE value="react scripts added" />
     <MESSAGE value="react config added" />
-    <option name="LAST_COMMIT_MESSAGE" value="react config added" />
+    <MESSAGE value="Code modifying in react login page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code modifying in react login page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/.editorconfig" />
@@ -554,33 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/router.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -598,17 +696,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/router.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="168">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/stateManagement/loginPage.js">
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="252">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babel.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

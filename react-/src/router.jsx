@@ -5,8 +5,8 @@ import CheckboxWrapper from "./components/checkboxWrapper/checkboxWrapper";
 import React , {Component} from "react";
 import StateManagement from "./components/stateManagement/stateManagement";
 import treeView from "./components/treeview"
-import login from './components/stateManagement/loginPage'
-import profile from './components/stateManagement/profile'
+import login from './components/loginPage/loginPage'
+import profile from './components/loginPage/profile'
 
  class RouterLinks extends Component{
     render() {
