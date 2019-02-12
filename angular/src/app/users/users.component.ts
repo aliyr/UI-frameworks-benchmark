@@ -1,6 +1,6 @@
 import { Component, OnInit ,Input} from '@angular/core';
-import { PersistenceService } from 'angular-persistence';
 import { AllUSersService } from '../all-users.service';
+
 const uuidv1 = require('uuid/v1');
 
 @Component({
@@ -12,7 +12,7 @@ export class UsersComponent  {
   allUsersDB = []
   @Input('someNAme') someName = 'gholi'
 
-  constructor(private userService: AllUSersService) {
+  constructor(private userService: AllUSersService ) {
     this.allUsersDB = this.userService.mainUser
 
     

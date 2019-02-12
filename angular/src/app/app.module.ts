@@ -23,7 +23,8 @@ const appRoutes : Routes = [
 {path: 'treeView' , component :TreeViewComponent },
 {path: 'checkbox' , component :CheckboxComponent },
 {path: 'users' , component :UsersComponent },
-{path: 'login-page' , component :LoginPageComponent }
+{path: 'login-page' , component :LoginPageComponent },
+{path: 'profile/:id' , component :ProfileComponent }
 
 
 
