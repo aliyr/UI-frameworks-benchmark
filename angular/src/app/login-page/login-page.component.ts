@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AllUSersService } from '../all-users.service';
 
 @Component({
   selector: 'app-login-page',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-  constructor() { }
+  constructor(private userService: AllUSersService) { }
 
   ngOnInit() {
 
   }
-
+  validateUser(loginUser){
+   this.userservice.isValid= this.userService.mainUser.find((eachUserObject)=>{
+    return (eachUserObject.user==loginUser)
+   })
+   
+  }
 }

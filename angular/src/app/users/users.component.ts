@@ -14,10 +14,12 @@ export class UsersComponent  {
 
   constructor(private userService: AllUSersService) {
     this.allUsersDB = this.userService.mainUser
+
+    
   }
 
   
-  addToList(newUser){
+  addToList(newUser ){
     this.allUsersDB.push({user : newUser , id:uuidv1()})
      }
      changeName(namePlace , NewName){

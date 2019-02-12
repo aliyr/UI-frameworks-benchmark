@@ -16,6 +16,7 @@ import { from } from 'rxjs';
 import { UsersComponent } from './users/users.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PersistenceModule  } from 'angular-persistence';
+import { ProfileComponent } from './profile/profile.component';
 
 const appRoutes : Routes = [
   {path: 'VirtualScrollerComponent' , component : VirtualScrollerComponent},
@@ -37,6 +38,7 @@ const appRoutes : Routes = [
     ChechboxmoduleComponent,
     UsersComponent,
     LoginPageComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
