@@ -13,39 +13,34 @@ import someStore from '../Store';
         userIsValid :null
     };
     verifyUser(loginName){
-
+        const browserHistory = this.props.history;
+        debugger;
          const checkName = someStore.users.find((username) =>  {
-           if (username.name === loginName) {
-            this.setState({userIsValid : true});
-            return ( username)
+            if (username.name === loginName) {
+                this.setState({userIsValid : true});
+                const userId = someStore.users.find(p => p.name === loginName).id;
+                browserHistory.push(`/profile/${userId}`);
+                return true;
             } else {
-                    this.setState({userIsValid : false})
+               this.setState({userIsValid : false});
+               return false;
             }
-            });
-            this.setState({
-                loginCHeck: checkName
-            })
+         });
+         this.setState({
+             loginCHeck: checkName
+         })
     }
     changeNameValue(e){
         this.setState({ name: e.target.value });
     }
     render(){
-        let result;
-        if(this.state.userIsValid){
-            this.props.history.push({
-                pathname : `/profile/${this.state.loginCHeck.id}`
-            });
 
-           result =  <div>    {this.state.loginCHeck.id}</div>
-        }else if (this.state.loginCHeck === undefined) {
-            result =  <div>  your username is not valid</div>
-        }
         return(
             <div>
                <input type='text' value={this.state.name}  onChange={ this.changeNameValue.bind(this) } />
                <button onClick={() => this.verifyUser(this.state.name)} >log in </button>
                <div>
-                {result}
+                   {this.state.userIsValid === false ? <div>  your username is not valid</div> : ''}
                </div>
             </div>
         )

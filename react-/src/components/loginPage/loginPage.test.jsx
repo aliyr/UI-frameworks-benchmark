@@ -1,7 +1,8 @@
 import React from "react";
 import { mount } from "enzyme";
 import LoginPage from './loginPage';
-import UserStore from '../Store'
+import UserStore from '../Store';
+import {MemoryRouter} from "react-router-dom";
 
 describe('loginPage', () => {
     let props;
@@ -9,13 +10,19 @@ describe('loginPage', () => {
     const loginPage = () => {
         if (!mountedLoginPage) {
             mountedLoginPage = mount(
-                <LoginPage {...props} />
+                <MemoryRouter initialEntries={['/loginForm']}>
+                    <LoginPage {...props} />
+                </MemoryRouter>
             )
         }
         return mountedLoginPage
     };
     beforeEach(() => {
-        mountedLoginPage = undefined
+        mountedLoginPage = undefined;
+        props = {
+            history: {push: function () {}
+            }
+        }
     });
 
     it('always renders a input type checkbox', () => {
@@ -30,15 +37,17 @@ describe('loginPage', () => {
     it('should take user as an item and should not be verified', () => {
         const loginForm = loginPage();
         loginForm.setState({name: 'hashName'});
-        expect(loginForm.instance().verifyUser(loginForm.state.name)).toBeFalsy();
+        expect(loginForm.find(LoginPage).instance().verifyUser(loginForm.state().name)).toBeFalsy();
 
     });
 
-    it('should take user as an item and should not be verified', () => {
-        const loginForm = loginPage();
-        loginForm.setState({name: 'hashName'});
-        expect(loginForm.instance().verifyUser(loginForm.state.name)).toBeFalsy();
-
+    it('should take user as an item in store and should be verified', () => {
+        UserStore.addUser('gholi');
+        const loginForm = loginPage().find(LoginPage);
+        loginForm.setState({name: 'gholi'});
+        loginForm.instance().verifyUser(loginForm.state().name);
+        expect(loginForm.state().userIsValid).toEqual(true);
     });
 });
+
 

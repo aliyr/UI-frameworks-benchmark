@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b95ddf4-1c6c-418d-aa96-7a4bfbae23c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+    <list default="true" id="3b95ddf4-1c6c-418d-aa96-7a4bfbae23c3" name="Default Changelist" comment="jest tests implemented + enhanced">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stateManagement/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/stateManagement/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loginPage/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+            <state relative-caret-position="232">
+              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -40,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="232">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -52,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="308">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -110,8 +103,8 @@
         <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/babel.config.js" />
-        <option value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
         <option value="$PROJECT_DIR$/src/components/loginPage/loginPage.js" />
+        <option value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
       </list>
     </option>
   </component>
@@ -265,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.loginPage.should take user as an item and be equal to component state">
+  <component name="RunManager" selected="Jest.loginPage">
     <configuration name="loginPage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -276,48 +269,6 @@
       <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
       <test-names>
         <test-name value="loginPage" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="loginPage.always renders a `ClockDisplay`" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
-      <test-names>
-        <test-name value="loginPage" />
-        <test-name value="always renders a `ClockDisplay`" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="loginPage.always renders a `button`" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
-      <test-names>
-        <test-name value="loginPage" />
-        <test-name value="always renders a `button`" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="loginPage.always renders a input type checkbox" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
-      <test-names>
-        <test-name value="loginPage" />
-        <test-name value="always renders a input type checkbox" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -335,24 +286,66 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="loginPage.should take user as an item and should not be verified" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="should take user as an item and should not be verified" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="loginPage.should take user as an item in store and should be verified" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="should take user as an item in store and should be verified" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="loginPage.this.props.history should be an object" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="this.props.history should be an object" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="App.test.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/App.test.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.App.test.js" />
-      <item itemvalue="Jest.loginPage" />
-      <item itemvalue="Jest.loginPage.always renders a `ClockDisplay`" />
-      <item itemvalue="Jest.loginPage.always renders a `button`" />
-      <item itemvalue="Jest.loginPage.always renders a input type checkbox" />
       <item itemvalue="Jest.loginPage.should take user as an item and be equal to component state" />
+      <item itemvalue="Jest.loginPage.should take user as an item and should not be verified" />
+      <item itemvalue="Jest.loginPage.should take user as an item in store and should be verified" />
+      <item itemvalue="Jest.loginPage" />
+      <item itemvalue="Node.js.App.test.js" />
+      <item itemvalue="Jest.loginPage.this.props.history should be an object" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.loginPage.should take user as an item and be equal to component state" />
-        <item itemvalue="Jest.loginPage.always renders a input type checkbox" />
-        <item itemvalue="Jest.loginPage.always renders a `button`" />
-        <item itemvalue="Jest.loginPage.always renders a `ClockDisplay`" />
         <item itemvalue="Jest.loginPage" />
+        <item itemvalue="Jest.loginPage.this.props.history should be an object" />
+        <item itemvalue="Jest.loginPage.should take user as an item in store and should be verified" />
+        <item itemvalue="Jest.loginPage.should take user as an item and should not be verified" />
+        <item itemvalue="Jest.loginPage.should take user as an item and be equal to component state" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +370,8 @@
       <workItem from="1549435080798" duration="1025000" />
       <workItem from="1549437898267" duration="1417000" />
       <workItem from="1549530553148" duration="4812000" />
-      <workItem from="1549954975359" duration="15457000" />
+      <workItem from="1549954975359" duration="24870000" />
+      <workItem from="1550041802430" duration="5185000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;breaking changes on 3 frameworks">
       <created>1548314167954</created>
@@ -456,43 +450,50 @@
       <option name="project" value="LOCAL" />
       <updated>1549955985805</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="jest tests implemented + enhanced">
+      <created>1549975404957</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1549975404957</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="loginPage - 2019.02.12 at 13h 56m 50s.xml">
+    <history-entry file="loginPage_should_take_user_as_an_item_in_store_and_should_be_verified - 2019.02.13 at 10h 54m 05s.xml">
+      <configuration name="loginPage.should take user as an item in store and should be verified" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 10h 57m 23s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 03m 23s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 08m 12s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 08m 28s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_in_store_and_should_be_verified - 2019.02.13 at 11h 08m 50s.xml">
+      <configuration name="loginPage.should take user as an item in store and should be verified" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 09m 55s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_in_store_and_should_be_verified - 2019.02.13 at 11h 10m 27s.xml">
+      <configuration name="loginPage.should take user as an item in store and should be verified" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 11m 06s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage - 2019.02.13 at 11h 31m 28s.xml">
       <configuration name="loginPage" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_always_renders_a_`ClockDisplay` - 2019.02.12 at 15h 28m 35s.xml">
-      <configuration name="loginPage.always renders a `ClockDisplay`" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_always_renders_a_`button` - 2019.02.12 at 15h 29m 16s.xml">
-      <configuration name="loginPage.always renders a `button`" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_always_renders_a_input_type_checkbox - 2019.02.12 at 15h 31m 15s.xml">
-      <configuration name="loginPage.always renders a input type checkbox" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_always_renders_a_input_type_checkbox - 2019.02.12 at 15h 31m 47s.xml">
-      <configuration name="loginPage.always renders a input type checkbox" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 03m 45s.xml">
-      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 04m 15s.xml">
-      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 04m 39s.xml">
-      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 07m 00s.xml">
-      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="loginPage_should_take_user_as_an_item_and_be_equal_to_component_state - 2019.02.12 at 16h 07m 42s.xml">
-      <configuration name="loginPage.should take user as an item and be equal to component state" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94176000" />
+    <option name="totallyTimeSpent" value="108774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -504,7 +505,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7580825" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32552955" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -512,7 +513,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36789298" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.36789298" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.40245262" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -534,7 +535,8 @@
     <MESSAGE value="react scripts added" />
     <MESSAGE value="react config added" />
     <MESSAGE value="Code modifying in react login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code modifying in react login page" />
+    <MESSAGE value="jest tests implemented + enhanced" />
+    <option name="LAST_COMMIT_MESSAGE" value="jest tests implemented + enhanced" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/.editorconfig" />
@@ -706,16 +708,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
     <entry file="file://$PROJECT_DIR$/src/setupTests.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -740,16 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -760,10 +743,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        <state relative-caret-position="232">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -772,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="232">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
