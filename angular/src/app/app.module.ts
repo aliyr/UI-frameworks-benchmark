@@ -12,12 +12,20 @@ import { TreeViewComponent } from './tree-view/tree-view.component';
 import { TreeModule } from 'angular-tree-component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { ChechboxmoduleComponent } from './chechboxmodule/chechboxmodule.component';
-
 import { from } from 'rxjs';
+import { UsersComponent } from './users/users.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { PersistenceModule  } from 'angular-persistence';
+import { ProfileComponent } from './profile/profile.component';
+
 const appRoutes : Routes = [
   {path: 'VirtualScrollerComponent' , component : VirtualScrollerComponent},
 {path: 'treeView' , component :TreeViewComponent },
-{path: 'checkbox' , component :CheckboxComponent }
+{path: 'checkbox' , component :CheckboxComponent },
+{path: 'users' , component :UsersComponent },
+{path: 'login-page' , component :LoginPageComponent },
+{path: 'profile/:id' , component :ProfileComponent }
+
 
 
 ]
@@ -29,12 +37,16 @@ const appRoutes : Routes = [
     TreeViewComponent,
     CheckboxComponent,
     ChechboxmoduleComponent,
+    UsersComponent,
+    LoginPageComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ScrollingModule,
+    PersistenceModule,
     RouterModule.forRoot(
       appRoutes,
 

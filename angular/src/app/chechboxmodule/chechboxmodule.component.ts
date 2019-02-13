@@ -16,8 +16,6 @@ export class ChechboxmoduleComponent {
   @Input() customStyle: object;
   @Input() eachID: string;
 
-
-
   setValue() {
 this.checked = !this.checked
   }
