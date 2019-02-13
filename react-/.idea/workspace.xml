@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b95ddf4-1c6c-418d-aa96-7a4bfbae23c3" name="Default Changelist" comment="">
+    <list default="true" id="3b95ddf4-1c6c-418d-aa96-7a4bfbae23c3" name="Default Changelist" comment="jest tests implemented + enhanced">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/src/components/stateManagement/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/components/stateManagement/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/src/components/stateManagement/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/components/stateManagement/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../vue/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loginPage/loginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,55 +19,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/stateManagement/stateManagement.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="232">
+              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
               <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Navbar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="308">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,6 +68,8 @@
     <findStrings>
       <find>babel</find>
       <find>babel-prese</find>
+      <find>usernullCheck</find>
+      <find>enzy</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,9 +95,16 @@
         <option value="$PROJECT_DIR$/src/components/stateManagement/main.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/components/stateManagement/Navbar.js" />
-        <option value="$PROJECT_DIR$/src/components/stateManagement/stateManagement.js" />
         <option value="$PROJECT_DIR$/src/components/Store.js" />
         <option value="$PROJECT_DIR$/src/components/stateManagement/Main.js" />
+        <option value="$PROJECT_DIR$/src/components/stateManagement/stateManagement.js" />
+        <option value="$PROJECT_DIR$/src/components/stateManagement/loginPage.js" />
+        <option value="$PROJECT_DIR$/src/App.test.js" />
+        <option value="$PROJECT_DIR$/src/setupTests.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/babel.config.js" />
+        <option value="$PROJECT_DIR$/src/components/loginPage/loginPage.js" />
+        <option value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
       </list>
     </option>
   </component>
@@ -125,7 +115,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -149,25 +139,7 @@
             <path>
               <item name="react-" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="stateManagement" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,12 +148,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/App.test.js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="D:\works\UI-frameworks-benchmark\react-\node_modules\eslint" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -191,6 +165,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\works\UI-frameworks-benchmark\react-\src\components\loginPage" />
       <recent name="D:\works\UI-frameworks-benchmark\react-\src\components\stateManagement" />
     </key>
   </component>
@@ -283,35 +258,94 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.App.test.js">
-    <configuration name="get-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http">
+  <component name="RunManager" selected="Jest.loginPage">
+    <configuration name="loginPage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="get-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" index="2">
+    <configuration name="loginPage.should take user as an item and be equal to component state" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="should take user as an item and be equal to component state" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="post-requests#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http">
+    <configuration name="loginPage.should take user as an item and should not be verified" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="should take user as an item and should not be verified" />
+      </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="post-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" index="2">
+    <configuration name="loginPage.should take user as an item in store and should be verified" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="should take user as an item in store and should be verified" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="loginPage.this.props.history should be an object" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx" />
+      <test-names>
+        <test-name value="loginPage" />
+        <test-name value="this.props.history should be an object" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="App.test.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/App.test.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.get-requests#1" />
-      <item itemvalue="HTTP Request.get-requests#2" />
-      <item itemvalue="HTTP Request.post-requests#1" />
-      <item itemvalue="HTTP Request.post-requests#2" />
+      <item itemvalue="Jest.loginPage.should take user as an item and be equal to component state" />
+      <item itemvalue="Jest.loginPage.should take user as an item and should not be verified" />
+      <item itemvalue="Jest.loginPage.should take user as an item in store and should be verified" />
+      <item itemvalue="Jest.loginPage" />
       <item itemvalue="Node.js.App.test.js" />
+      <item itemvalue="Jest.loginPage.this.props.history should be an object" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.post-requests#1" />
-        <item itemvalue="HTTP Request.get-requests#2" />
-        <item itemvalue="HTTP Request.get-requests#1" />
-        <item itemvalue="HTTP Request.post-requests#2" />
+        <item itemvalue="Jest.loginPage" />
+        <item itemvalue="Jest.loginPage.this.props.history should be an object" />
+        <item itemvalue="Jest.loginPage.should take user as an item in store and should be verified" />
+        <item itemvalue="Jest.loginPage.should take user as an item and should not be verified" />
+        <item itemvalue="Jest.loginPage.should take user as an item and be equal to component state" />
       </list>
     </recent_temporary>
   </component>
@@ -332,7 +366,12 @@
       <workItem from="1548921347530" duration="1158000" />
       <workItem from="1549178643129" duration="20586000" />
       <workItem from="1549262771908" duration="1747000" />
-      <workItem from="1549354294925" duration="985000" />
+      <workItem from="1549354294925" duration="5828000" />
+      <workItem from="1549435080798" duration="1025000" />
+      <workItem from="1549437898267" duration="1417000" />
+      <workItem from="1549530553148" duration="4812000" />
+      <workItem from="1549954975359" duration="24870000" />
+      <workItem from="1550041802430" duration="5185000" />
     </task>
     <task id="LOCAL-00001" summary="&#10;breaking changes on 3 frameworks">
       <created>1548314167954</created>
@@ -404,14 +443,60 @@
       <option name="project" value="LOCAL" />
       <updated>1549206731547</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Code modifying in react login page">
+      <created>1549955985805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1549955985805</updated>
+    </task>
+    <task id="LOCAL-00012" summary="jest tests implemented + enhanced">
+      <created>1549975404957</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1549975404957</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="loginPage_should_take_user_as_an_item_in_store_and_should_be_verified - 2019.02.13 at 10h 54m 05s.xml">
+      <configuration name="loginPage.should take user as an item in store and should be verified" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 10h 57m 23s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 03m 23s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 08m 12s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 08m 28s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_in_store_and_should_be_verified - 2019.02.13 at 11h 08m 50s.xml">
+      <configuration name="loginPage.should take user as an item in store and should be verified" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 09m 55s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_should_take_user_as_an_item_in_store_and_should_be_verified - 2019.02.13 at 11h 10m 27s.xml">
+      <configuration name="loginPage.should take user as an item in store and should be verified" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage_this_props_history_should_be_an_object - 2019.02.13 at 11h 11m 06s.xml">
+      <configuration name="loginPage.this.props.history should be an object" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="loginPage - 2019.02.13 at 11h 31m 28s.xml">
+      <configuration name="loginPage" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66622000" />
+    <option name="totallyTimeSpent" value="108774000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
@@ -420,7 +505,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32552955" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,7 +513,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2664437" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.36789298" />
       <window_info anchor="bottom" id="REST Client" order="11" weight="0.40245262" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -449,7 +534,9 @@
     <MESSAGE value="state management with mobx completely implemented" />
     <MESSAGE value="react scripts added" />
     <MESSAGE value="react config added" />
-    <option name="LAST_COMMIT_MESSAGE" value="react config added" />
+    <MESSAGE value="Code modifying in react login page" />
+    <MESSAGE value="jest tests implemented + enhanced" />
+    <option name="LAST_COMMIT_MESSAGE" value="jest tests implemented + enhanced" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/.editorconfig" />
@@ -575,16 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/router.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -600,41 +677,66 @@
     <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="336" lean-forward="true" selection-start-line="336" selection-end-line="336" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/stateManagement/stateManagement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+          <caret line="336" selection-start-line="336" selection-end-line="336" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Navbar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="168">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/stateManagement/stateManagement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/setupTests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babel.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="13" column="68" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/stateManagement/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="392">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -643,8 +745,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="308">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.test.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/loginPage/loginPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

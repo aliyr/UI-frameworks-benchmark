@@ -2,6 +2,7 @@
   <dictionary name="aliyr">
     <words>
       <w>navbar</w>
+      <w>treeview</w>
     </words>
   </dictionary>
 </component>
