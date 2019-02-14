@@ -56,11 +56,11 @@ describe('loginPage', () => {
         expect(loginForm.state().userIsValid).toEqual(true);
     });
 
-    it('should check after user verification route changes' , async ()=>{
-        let loginForm = APPpage().find(LoginPage);
-        loginForm.instance().verifyUser(loginForm.state().name);
-        expect(APPpage().find('Route[path="/profile/:id"]').first().prop('component')).toBe(profile);
+    it('should check after user verification route changes' ,async  ()=>{
+         const loginForm = APPpage().find(LoginPage);
+         loginForm.setState({name: 'gholi'});
+         loginForm.instance().verifyUser(loginForm.state().name);
+        // expect(loginForm.state().userIsValid).toEqual(true);
+        expect(loginForm.state().routeChange).toEqual(true)
     })
 });
-
-

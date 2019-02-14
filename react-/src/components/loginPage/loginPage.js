@@ -1,13 +1,11 @@
 import React , {Component} from "react";
 import {observer} from "mobx-react";
 import someStore from '../Store';
+import { debug } from "util";
 
 @observer class loginForm extends Component{
-    componentWillUnmount(){
-        if(this.props.history !== "/"){
-           console.log('route changed')
-        }
-    }
+    user = ' ';
+ 
     constructor(props) {
         super(props);
         this.verifyUser = this.verifyUser.bind(this)
@@ -16,18 +14,23 @@ import someStore from '../Store';
         name : '',
         loginCHeck : '',
         userIsValid :null,
+        routeChange : true 
     };
     verifyUser(loginName){
+        console.log("login name " + loginName)
          const browserHistory = this.props.history;
+         let that = this;
          const checkName = someStore.users.find((username) =>  {
             if (username.name === loginName) {
-                this.setState({userIsValid : true});
+                that.setState({userIsValid : true});
+                console.log(username.name)
                 const userId = someStore.users.find(p => p.name === loginName).id;
                 browserHistory.push(`/profile/${userId}`);
-                return true;
+                this.setState({routeChange : false})
+                return ;
             } else {
-               this.setState({userIsValid : false});
-               return false;
+               that.setState({userIsValid : false});
+               return ;
             }
          });
          this.setState({
@@ -40,7 +43,7 @@ import someStore from '../Store';
     render(){
 
         return(
-            <div>
+            <div> 
                <input type='text' value={this.state.name}  onChange={ this.changeNameValue.bind(this) } />
                <button onClick={() => this.verifyUser(this.state.name)} >log in </button>
                <div>
