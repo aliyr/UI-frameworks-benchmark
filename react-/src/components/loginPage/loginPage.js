@@ -3,6 +3,11 @@ import {observer} from "mobx-react";
 import someStore from '../Store';
 
 @observer class loginForm extends Component{
+    componentWillUnmount(){
+        if(this.props.history !== "/"){
+           console.log('route changed')
+        }
+    }
     constructor(props) {
         super(props);
         this.verifyUser = this.verifyUser.bind(this)
@@ -10,11 +15,10 @@ import someStore from '../Store';
     state = {
         name : '',
         loginCHeck : '',
-        userIsValid :null
+        userIsValid :null,
     };
     verifyUser(loginName){
-        const browserHistory = this.props.history;
-        debugger;
+         const browserHistory = this.props.history;
          const checkName = someStore.users.find((username) =>  {
             if (username.name === loginName) {
                 this.setState({userIsValid : true});
