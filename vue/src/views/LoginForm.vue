@@ -4,7 +4,7 @@
       <br>
       <input type="text" v-model="userInput">
       <button @click="submitUser">submit</button>
-      <div style="color: red;">{{errorMessage}}</div>
+      <div id="error" style="color: red;">{{errorMessage}}</div>
     </div>
 </template>
 

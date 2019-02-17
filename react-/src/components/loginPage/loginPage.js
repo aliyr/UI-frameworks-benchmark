@@ -5,19 +5,23 @@ import someStore from '../Store';
 @observer class loginForm extends Component{
     constructor(props) {
         super(props);
-        this.verifyUser = this.verifyUser.bind(this)
+        this.verifyUser = this.verifyUser.bind(this);
+
+
+        this.state = {
+            name : '',
+            loginCHeck : '',
+            userIsValid :null
+        };
     }
-    state = {
-        name : '',
-        loginCHeck : '',
-        userIsValid :null
-    };
     verifyUser(loginName){
         const browserHistory = this.props.history;
         debugger;
+        let that = this;
          const checkName = someStore.users.find((username) =>  {
             if (username.name === loginName) {
-                this.setState({userIsValid : true});
+                that.setState({userIsValid : true});
+                let aaa = that.state;
                 const userId = someStore.users.find(p => p.name === loginName).id;
                 browserHistory.push(`/profile/${userId}`);
                 return true;
