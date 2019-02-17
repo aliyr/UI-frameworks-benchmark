@@ -23,7 +23,7 @@ describe('LoginForm.vue', () => {
     const store = new Vuex.Store(Store)
     const wrapper = mount(LoginForm, { localVue, router, store })
     const button = wrapper.find('button')
-    wrapper.setData({ name: 'gholi' })
+    wrapper.setData({ userInput: 'gholi' })
     button.trigger('click')
     expect(wrapper.contains('div#error')).toBe(true)
   })
