@@ -6,19 +6,22 @@ import {Router} from "@angular/router";
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.scss']
 })
-export class LoginPageComponent implements OnInit {
+export class LoginPageComponent {
+  
+  @Output() WilRouteChange = false
+
   constructor(private userService: AllUSersService , private router: Router) {  
-    
   }
-  ngOnInit() {
-  }
+ 
   validateUser(loginUser){
    this.userService.isValid= this.userService.mainUser.find((eachUserObject)=>{
     return (eachUserObject.user==loginUser)
    })
 if(this.userService.isValid != undefined){
   this.router.navigate(['/profile/' + this.userService.isValid.id ])
+  this.WilRouteChange =true
 }
 
   }
 }
+
