@@ -7,7 +7,9 @@ import {Router} from "@angular/router";
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-  constructor(private userService: AllUSersService , private router: Router) {  }
+  constructor(private userService: AllUSersService , private router: Router) {  
+    
+  }
   ngOnInit() {
   }
   validateUser(loginUser){

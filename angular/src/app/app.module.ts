@@ -18,6 +18,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { PersistenceModule  } from 'angular-persistence';
 import { ProfileComponent } from './profile/profile.component';
 
+
 const appRoutes : Routes = [
   {path: 'VirtualScrollerComponent' , component : VirtualScrollerComponent},
 {path: 'treeView' , component :TreeViewComponent },
@@ -25,8 +26,6 @@ const appRoutes : Routes = [
 {path: 'users' , component :UsersComponent },
 {path: 'login-page' , component :LoginPageComponent },
 {path: 'profile/:id' , component :ProfileComponent }
-
-
 
 ]
 
@@ -40,6 +39,8 @@ const appRoutes : Routes = [
     UsersComponent,
     LoginPageComponent,
     ProfileComponent,
+    
+    
   ],
   imports: [
     BrowserModule,

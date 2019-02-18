@@ -1,27 +1,39 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, TestBed,ComponentFixture } from '@angular/core/testing';
 import { LoginPageComponent } from './login-page.component';
-import { RouterTestingModule } from '@angular/router/testing';
-// import { by } from 'protractor';
-import { AllUSersService } from '../all-users.service';
-// import {APP_BASE_HREF} from '@angular/common';
+import { AppComponent } from '../app.component';
+import {RouterTestingModule} from "@angular/router/testing";
+import {ProfileComponent } from '../profile/profile.component'
+import { from } from 'rxjs';
+import { By, by } from 'protractor';
 
 fdescribe('ProfileComponent', () => {
-  // let component: LoginPageComponent;
-  // let fixture: ComponentFixture<LoginPageComponent>;
+   let component: LoginPageComponent;
+   let fixture: ComponentFixture<LoginPageComponent>;
 
   beforeEach(async(() => {
+
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        RouterTestingModule.withRoutes(
+          [{path: '', component: AppComponent}, 
+          {path: 'login-page', component: LoginPageComponent},
+          {path: 'profile/:id', component: ProfileComponent}
+        ]
+        )
+
       ],
       declarations: [
         LoginPageComponent,
+        AppComponent,
+        ProfileComponent
         
       ],
-      // providers: [
-      //   {provide: APP_BASE_HREF, useValue: '/profile'}
-      // ],
+       providers: [
+       ],
+       
     }).compileComponents();
+   
   }));
 
 it('should check if component is created', ()=>{
@@ -37,16 +49,23 @@ it('should check if component is created', ()=>{
  
   });
 
-it('should check if after button is clicked user verification is working' , () => {
-     const fixture = TestBed.createComponent(LoginPageComponent);
-      const compiled = fixture.debugElement.nativeElement;
-      //  const validate = TestBed.createComponent(AllUSersService);
- 
-     compiled.querySelector('#userLogIn').textContent = "bbb"
-      compiled.querySelector('#button').click()
-    // validate.detectChanges(); 
-    // expect(validate.componentInstance.isValid).toBe(true)
-    expect(true).toBe(true)
+it('should check if after button is clicked user verification is working and route change' , () => {
+       const fixture = TestBed.createComponent(AppComponent);
+        const compiled = fixture.debugElement.nativeElement;
+        fixture.detectChanges()
+        compiled.querySelector("#changeRoute").click()
+        fixture.detectChanges()
+        expect(compiled.querySelector("LoginPageComponent")).toBeUndefined()
+        // compiled.querySelector('#userLogIn').textContent ="aaa"
+
+        // compiled.querySelector('#button').click()
+      //   expect(location.pathname).toBe("/ddd")
+      // fixture.detectChanges()
+
+// expect(location.pathname).toBe("true")
+
+
+    
 })
 
 });
