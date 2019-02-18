@@ -8,7 +8,14 @@ import { debug } from "util";
  
     constructor(props) {
         super(props);
-        this.verifyUser = this.verifyUser.bind(this)
+        this.verifyUser = this.verifyUser.bind(this);
+
+
+        this.state = {
+            name : '',
+            loginCHeck : '',
+            userIsValid :null
+        };
     }
     state = {
         name : '',

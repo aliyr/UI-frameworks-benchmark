@@ -4,7 +4,7 @@
       <br>
       <input type="text" v-model="userInput">
       <button @click="submitUser">submit</button>
-      <div style="color: red;">{{errorMessage}}</div>
+      <div id="error" style="color: red;" v-if="errorMessage">{{errorMessage}}</div>
     </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   name: 'LoginForm',
   data: function () {
     return {
-      userInput: 'gholi',
+      userInput: 'aaa',
       errorMessage: ''
     }
   },
@@ -25,6 +25,9 @@ export default {
       } else {
         this.errorMessage = 'user not found'
       }
+    },
+    addUser (name) {
+      this.$store.commit('addUser', name)
     }
   }
 }
