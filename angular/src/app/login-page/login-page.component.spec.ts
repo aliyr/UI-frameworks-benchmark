@@ -44,12 +44,13 @@ it('should check if component is created', ()=>{
 })
 
 
-  it('should check if button is defined ', () => {
+  it(' check if button is created ', () => {
       const fixture = TestBed.createComponent(LoginPageComponent);
       const compiled = fixture.debugElement.nativeElement;
       expect(compiled.querySelector('button')).toBeDefined()
  
   });
+
 
 it('should check if after button is clicked user verification is working and route change' , async() => {
        const fixture = TestBed.createComponent(LoginPageComponent );
