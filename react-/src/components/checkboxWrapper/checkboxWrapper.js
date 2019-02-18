@@ -42,7 +42,7 @@ this.setState(
                  <Checkbox id={uuid.v4()} checkboxValue={this.state.valueFirst} valueChanged={this.valueChangeFirst}>             
                      <Textholder fname="gholi"/> 
                  </Checkbox> 
-                
+                 
                 {this.state.data}
             </div> 
         );

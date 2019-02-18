@@ -11,6 +11,7 @@ thisUserID
 
   ngOnInit() {
    this.thisUserID =this._Activatedroute.snapshot.params['id'];
+
   }
 
 }
