@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , EventEmitter, Input, Output } from '@angular/core';
 import { AllUSersService } from '../all-users.service';
 import {Router} from "@angular/router";
 @Component({
@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
-  constructor(private userService: AllUSersService , private router: Router) { }
+  constructor(private userService: AllUSersService , private router: Router) {  }
   ngOnInit() {
   }
   validateUser(loginUser){
