@@ -1,14 +1,12 @@
 import React from "react";
-import {shallow ,  mount } from "enzyme";
+import {  mount } from "enzyme";
 import LoginPage from './loginPage';
 import profile from './profile'
 import UserStore from '../Store';
 import {MemoryRouter } from "react-router-dom";
 import App from '../../App';
-import router from '../../router'
 
 const rrd = require('react-router-dom');
-// Just render plain div with its children
 rrd.BrowserRouter = ({children}) => <div>{children}</div>
 module.exports = rrd;
 
@@ -60,7 +58,6 @@ describe('loginPage', () => {
          const loginForm = APPpage().find(LoginPage);
          loginForm.setState({name: 'gholi'});
          loginForm.instance().verifyUser(loginForm.state().name);
-        // expect(loginForm.state().userIsValid).toEqual(true);
         expect(loginForm.state().routeChange).toEqual(true)
     })
 });
