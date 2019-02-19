@@ -1,17 +1,10 @@
-import { async, TestBed,ComponentFixture, inject } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
 import { LoginPageComponent } from './login-page.component';
 import { AppComponent } from '../app.component';
 import {RouterTestingModule} from "@angular/router/testing";
 import {ProfileComponent } from '../profile/profile.component'
-import { Component, NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
-import { By } from '@angular/platform-browser';
-import { Routes } from '@angular/router'
-import {Router} from "@angular/router";;
-import { by } from 'protractor';
-import { url } from 'inspector';
+
 fdescribe('ProfileComponent', () => {
-   let component: LoginPageComponent;
-   let fixture: ComponentFixture<LoginPageComponent>;
 
   beforeEach(async(() => {
 
@@ -54,7 +47,6 @@ it('should check if component is created', ()=>{
 
 it('should check if after button is clicked user verification is working and route change' , async() => {
        const fixture = TestBed.createComponent(LoginPageComponent );
-    
         const compiled = fixture.debugElement.nativeElement;
         fixture.detectChanges()
          compiled.querySelector('textarea').textContent ="aaa"
