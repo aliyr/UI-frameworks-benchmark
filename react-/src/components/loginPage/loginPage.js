@@ -24,13 +24,12 @@ import { debug } from "util";
         routeChange : true 
     };
     verifyUser(loginName){
-        console.log("login name " + loginName)
-         const browserHistory = this.props.history;
-         let that = this;
+        const browserHistory = this.props.history;
+        let that = this;
          const checkName = someStore.users.find((username) =>  {
             if (username.name === loginName) {
                 that.setState({userIsValid : true});
-                console.log(username.name)
+                let aaa = that.state;
                 const userId = someStore.users.find(p => p.name === loginName).id;
                 browserHistory.push(`/profile/${userId}`);
                 this.setState({routeChange : false})

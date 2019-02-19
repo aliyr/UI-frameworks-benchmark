@@ -10,14 +10,17 @@ localVue.use(VueRouter)
 localVue.use(Store)
 
 describe('LoginForm.vue', () => {
+  
   it('should render button', () => {
     const wrapper = mount(LoginForm)
     expect(wrapper.contains('button')).toBe(true)
   })
+
   it('should render input', () => {
     const wrapper = mount(LoginForm)
     expect(wrapper.contains('input')).toBe(true)
   })
+
   it('should gets the wrong name and shows the not found error', () => {
     const router = new VueRouter(routes)
     const store = new Vuex.Store(Store)
@@ -27,6 +30,7 @@ describe('LoginForm.vue', () => {
     button.trigger('click')
     expect(wrapper.contains('div#error')).toBe(true)
   })
+
   it('should gets the right name and redirects to profile page', () => {
     const store = new Vuex.Store(Store)
     const router = new VueRouter(routes)
@@ -36,4 +40,5 @@ describe('LoginForm.vue', () => {
     button.trigger('click')
     expect(wrapper.vm.$data.errorMessage.length).toBe(0)
   })
+   
 })
